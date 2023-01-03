@@ -1,0 +1,145 @@
+/** @format */
+
+.user-content-container {
+  width: 99.3vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-backcover {
+  position: absolute;
+  top: 0rem;
+  border-radius: 30px;
+  width: 100%;
+  height: 250px;
+}
+
+.userData-container {
+  width: 400px;
+  height: 450px;
+  display: flex;
+  background-color: #b2ffff;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  gap: 3rem;
+  padding: 1.5rem;
+  position: relative;
+  border: 1px solid grey;
+}
+.btn-primary {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 3rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+  z-index: 500;
+}
+
+/** @format */
+
+.account-container {
+  width: 400px;
+  height: 420px;
+  background-color: #023e8a;
+  padding: 1rem;
+  border-radius: 30px;
+  position: relative;
+  font-size: 1rem;
+}
+
+.img-user {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: 500;
+}
+
+.account-content-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.btn-account {
+  margin-top: 3rem;
+  position: absolute;
+  background-color: #caf0f8;
+  border: 1px solid #fff;
+  padding: 1rem 3rem;
+  margin-left: -4rem;
+  text-decoration: none;
+  color: white;
+}
+
+.account-baseimg {
+  width: 200px;
+  height: 200px;
+}
+
+.account-backimg {
+  width: 100%;
+  height: 200px;
+}
+
+.account-img-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content {
+  margin: 2rem;
+  width: 90%;
+}
+
+.modal-bio {
+  height: 60px;
+}
+
+.btn-account:hover {
+  background-color: #29bf12;
+}
+
+.btn-edit {
+  position: absolute;
+  right: 2%;
+  font-size: 2rem;
+  z-index: 500;
+  cursor: pointer;
+}
+
+.btn-edit:hover {
+  color: #29bf12;
+  transition: color 2s;
+}
+
+.button-43 {
+  background-color: #023e8a;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  padding: 1rem 1.75rem;
+  text-decoration: none;
+  width: 90%;
+  border: 0;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .button-43 {
+    padding: 1rem 2rem;
+  }
+}

@@ -1,0 +1,44 @@
+/** @format */
+
+import React, { useEffect, useState } from "react";
+import { onSnapshot, collection } from "firebase/firestore";
+import db from "../firebase";
+import LikedPosts from "./LikedPosts";
+import "./Likedposts.css";
+
+function Liked() {
+  const [likedposts, setLikedPosts] = useState([]);
+
+  useEffect(() => {
+    onSnapshot(collection(db, "liked"), (snapshot) => {
+      console.log(snapshot.docs);
+      setLikedPosts(
+        snapshot.docs.map((doc) => ({
+          id: doc.id,
+          data: doc.data(),
+        }))
+      );
+    });
+  }, []);
+
+  console.log(likedposts);
+
+  return (
+    <div className='liked-posts-container'>
+      {likedposts.map(
+        ({ id, data: { name, description, message, photoUrl } }) => (
+          <LikedPosts
+            id={id}
+            name={name}
+            value={id}
+            description={description}
+            message={message}
+            photoUrl={photoUrl}
+          />
+        )
+      )}
+    </div>
+  );
+}
+
+export default Liked;
